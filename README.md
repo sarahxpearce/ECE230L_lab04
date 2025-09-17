@@ -17,6 +17,8 @@ using an implemented design on your Basys3 boards.
 
 Summarize your learnings from the lab here.
 
+In this week's lab, we got to gain more experience with K-Maps and expressing Boolean logic in Verilog. In the lab, we had to create an expanded SOP to work as the naive function, then created minimized SOP and POS functions to go in the minterm and maxterm files respectively. This allowed us to gain more familiarity with K-Maps (especially as we haven't yet worked extensively with 4 variable K-Maps) and also programming in Verilog. 
+
 ## Lab Questions
 
 ### Why are the groups of 1’s (or 0’s) that we select in the KMap able to go across edges?
@@ -27,4 +29,4 @@ Sum of Products: When finding the minterm, you are finding the product (AND) of 
 Product of Sums: When finding the maxterm, you are finding the sum (OR) of your variables to equal 0 and then multiplying (AND) those equations together.
 
 ### Open the test.v file – how are we able to check that the signals match using XOR?
-Because XOR is true if the inputs are different and one is true. For the progaram to work all the inputs have to be the same.
+The test.v file is able to check that the signals match using XOR because it outputs 1 only when two signals are different. Therefore, if they match the XOR result will be 0. This lets the program quickly check every input case and stop if the outputs ever don’t match.
